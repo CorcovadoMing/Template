@@ -3,10 +3,10 @@ all:
 	@echo '    sudo make install'
 	@echo '    sudo make uninstall'
 
-install: 
-	mkdir -p ~/.config
-	cp -r -n ../template ~/.config
-	rsync -av ./bin/* /usr/local/bin
+install:
+	@mkdir -p ~/.config
+	@cp -r -n ../template ~/.config
+	@rsync -av ./bin/* /usr/local/bin
 
 uninstall:
 	rm -r ~/.config/template
