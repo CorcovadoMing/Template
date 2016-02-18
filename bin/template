@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp -n ~/.config/template/$1/* .
