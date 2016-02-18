@@ -1,3 +1,8 @@
 #!/bin/bash
 
-cp -n ~/.config/template/$1/* .
+if [ $# == 0 ]; then
+	echo 'Usage:'
+	echo '    template <LANG>'
+else 
+	cp -n ~/.config/template/$1/* .
+fi
