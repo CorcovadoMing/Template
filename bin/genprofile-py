@@ -2,7 +2,7 @@
 
 PREC_CODE=
 
-if [ $1 == "-p" ]; then
+if [ "$1" == "-p" ]; then
 	PREC_CODE="(precision=4)"
 	shift
 fi
