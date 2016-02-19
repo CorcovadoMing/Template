@@ -17,6 +17,7 @@ profile:
 	@$(SHELL) -c "kernprof -l $(PROFILE_FOLDER)/$(MAIN)" > /dev/null
 	@$(SHELL) -c "$(PY) -m line_profiler $(MAIN).lprof"
 	@rm -rf $(PROFILE_FOLDER)
+	@rm -f $(MAIN).lprof
 
 memprofile:
 	@$(SHELL) -c "$(GENPRO) -p $(profile_functions)"
