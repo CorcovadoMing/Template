@@ -1,9 +1,15 @@
 MAIN=main.py
+PROFILE_FOLDER=profile
+
+ifneq ("$(wildcard $(~/.config/fish))","")
+	SHELL=bash
+else
+	SHELL=fish
+endif
 
 PY=python
-SHELL=fish
-PROFILE_FOLDER=profile
 GENPRO=genprofile-py
+
 file := ./profile.config
 profile_functions := $(shell cat ${file})
 
