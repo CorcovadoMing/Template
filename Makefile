@@ -11,6 +11,6 @@ install:
 uninstall:
 	rm -r ~/.config/template
 	rm /usr/local/bin/template
-	rm /usr/local/bin/genprofile
+	rm /usr/local/bin/genprofile-py
 
 
